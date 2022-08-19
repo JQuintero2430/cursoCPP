@@ -18,5 +18,8 @@ int main(){
    area = pi * pow (radio, 2);
    length = 2 * pi * radio;
 
+   cout << "\nEl area del circulo es: "<< area << endl;
+   cout << "La longitud de la circunferencia es: "<< length << endl;
+
    return 0;
 }
