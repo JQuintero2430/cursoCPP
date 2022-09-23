@@ -5,26 +5,29 @@
 #include <conio.h>
 using namespace std;
 
-int main(){
-int number, suma = 0, conteo = 0, promedio;
-char response;
+int main()
+{
+   int number, suma = 0, conteo = 0;
+   double promedio;
+   char response;
 
-do {
-   cout << "digite un numero: ";
-   cin >> number;
+   do
+   {
+      cout << "digite un numero: ";
+      cin >> number;
 
-   suma += number;
-   conteo++;
-   
+      suma += number;
+      conteo++;
 
-   cout << "desea introducir otro numero (s/n): ";
-   cin >> response;
+      cout << "desea introducir otro numero (s/n): ";
+      cin >> response;
 
-}while(response == 's');
+      cout << endl;
+   } while (response == 's' || response == 'S');
 
-promedio = suma / conteo;
+   promedio = (double)suma / conteo;
 
-cout << "el promedio de los numeros digitados es: " << promedio << endl;
+   cout << "el promedio de los numeros digitados es: " << promedio << endl;
 
-return 0;
+   return 0;
 }

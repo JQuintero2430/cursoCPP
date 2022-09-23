@@ -5,23 +5,25 @@
 #include <conio.h>
 using namespace std;
 
-int main(){
-int numero, digito, suma = 0;
+int main()
+{
+   int numero, digito, suma = 0;
 
-cout << "Digite un numero: ";
-cin >> numero;
+   cout << "Digite un numero: ";
+   cin >> numero;
 
-   while (numero != 0) {
+   while (numero != 0)
+   {
       digito = numero % 10;
       numero /= 10;
-      suma += digito;  
-
+      suma += digito;
    }
 
-   if (suma < 0) {
+   if (suma < 0)
+   {
       suma *= -1;
    }
    cout << "la suma de las cifras es: " << suma << endl;
 
-return 0;
+   return 0;
 }
