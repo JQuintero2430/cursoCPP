@@ -22,6 +22,5 @@ int main()
    else{
       cout << "Su calificacion final es "<< calificacionTotal<<" por lo tanto ud ha reprobado la asignatura"<<endl;
    }
-
    return 0;
 }
